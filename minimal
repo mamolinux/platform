@@ -1,11 +1,11 @@
 Task-Section: user
 Task-Relevance: 9
 Task-Description: Minimal base system
-Task-Extended-Description: This task installs the core of an Ubuntu-based system.
+Task-Extended-Description: This task installs the core of an Ubuntu-based MamoLinux system.
 Task-Test-new-install: install skip
 Task-Seeds: required
 
-Note that some packages that form the core of an Ubuntu-based system are in the required seed, from which this seed inherits. The minimal seed describes those packages at Priority: important.
+Note that some packages that form the core of an Ubuntu-based MamoLinux system are in the required seed, from which this seed inherits. The minimal seed describes those packages at Priority: important.
 
 Recommends are followed when processing this seed even though debootstrap doesn't do that. This may occasionally produce confusing results; however, it should be correct at release time, since the results of processing the seed are synced to Priority: important overrides.
 
@@ -28,7 +28,6 @@ Programs and packages necessary for both the proper functionality of the system 
  * debconf-i18n      # buildd chroots don't need this, but other systems generally do
  * kbd
  * eject             # very popular, useful, small
- * flatpak
  * less
  * locales
  * lsb-release
@@ -42,7 +41,7 @@ Programs and packages necessary for both the proper functionality of the system 
  * ubuntu-advantage-tools # needs to be on the system by default for ESM
  * ubuntu-keyring     # for authenticated package downloads
  * udev
- * vim-tiny
+ * vim               # We want full vim experience
  * whiptail          # for debconf's Dialog frontend
 
 == Networking ==
@@ -52,12 +51,10 @@ These provide various networking services, all should be configured in a client-
  * isc-dhcp-client   # LaMontJones
  * iproute2
  * netplan.io        # foundations-aa-migrating-to-neplan (replaces ifupdown)
-
  * iputils-ping
  * netcat-openbsd # FabioMassimoDiNitto
 
 = Meta =
 
  * init               # ensure we have an init system (but minimal chroots)
- * elementary-minimal     # elementary-specific bits we want on every elementary system
-
+ * mamolinux-minimal     # MamoLinux-specific bits we want on every MamoLinux system

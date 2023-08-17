@@ -10,7 +10,11 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: ubuntu:rolling
-
+    
+    permissions:
+      contents: write
+      packages: write
+    
     steps:
     # We need git to checkout the metapackages repository with git so keep it above
     - name: Install dependencies
@@ -18,33 +22,33 @@ jobs:
       run: |
         apt-get update
         apt-get install -y git devscripts debootstrap germinate
-
+    
     - name: Checkout platform
-      uses: actions/checkout@v2
-
+      uses: actions/checkout@v3
+    
     - name: Checkout metapackages
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
       with:
-        repository: elementary/metapackages
-        path: metapackages
-        token: "${{ secrets.GIT_USER_TOKEN }}"
+        repository: mamolinux/mamolinux-meta
+        path: mamolinux-meta
         ref: jammy
-
+        token: ${{ github.token }}
+    
     - name: Update metapackages
       shell: bash
       env:
         BRANCH: jammy
       run: |
-        cd metapackages
+        cd mamolinux-meta
         ./update
         if git diff --quiet ; then
             echo "Everything is up-to-date, nothing to commit"
         else
-            git config --global user.email "builds@elementary.io"
-            git config --global user.name "elementaryBot"
+            git config --global user.email "actions@github.com"
+            git config --global user.name "Github Actions"
             echo "Committing new changes"
             git add .
-            git commit -m "Automatic update via elementary platform"
+            git commit -m "Automatic update via mamolinux platform"
             git push origin "$BRANCH"
             echo "Push complete"
         fi

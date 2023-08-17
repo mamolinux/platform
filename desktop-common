@@ -1,6 +1,6 @@
 This seed provides the basic components that should be installed on an
 Ubuntu-family desktop system. It is expected to be supplemented with a
-particular flavour of desktop environment (e.g. GNOME, KDE, or XFCE).
+particular flavour of desktop environment (e.g. Cinnamon, GNOME, KDE, or XFCE).
 
 Before packages are added here, they must follow the procedure to
 ensure that all parties are aware of the addition:
@@ -95,14 +95,29 @@ Packages used for X preconfiguration are just Recommends; removing them after in
 Fonts:
 
  * fonts-dejavu-core
+ * fonts-freefont-ttf
  * (fonts-kacst-one)
+ * (fonts-khmeros-core)
+ * (fonts-thai-tlwg)
+ * (fonts-lao)
  * (fonts-sil-padauk)
+ * (fonts-tibetan-machine)
+ * (fonts-sil-abyssinica)
+ * (fonts-lklug-sinhala)
+ * (fonts-indic)
+ * (fonts-liberation)
  * (fonts-noto-cjk)
  * (fonts-ubuntu)
+
+= Debugging and Diagnostics =
+
+ * (memtest86+)
 
 = Common Packaging Framework Stuff =
 
  * (packagekit)
+ * (snapd)
+ * (flatpak)
 
 = Firmware updating support =
 
