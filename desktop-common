@@ -47,9 +47,8 @@ These tools are very commonly used by people who drop into a console shell to do
 
 Basic network services and Windows integration.
 
- * wireless-tools
  * rfkill              # No longer using the copy from wireless-tools (LP: #715309)
- * wpasupplicant  # ScottJamesRemnant
+ * (wpasupplicant)  # ScottJamesRemnant
  * (libnss-mdns)       # IPv4 link-local DNS support
  * ca-certificates     # common SSL certificates
 
@@ -108,10 +107,6 @@ Fonts:
  * (fonts-liberation)
  * (fonts-noto-cjk)
  * (fonts-ubuntu)
-
-= Debugging and Diagnostics =
-
- * (memtest86+)
 
 = Common Packaging Framework Stuff =
 
