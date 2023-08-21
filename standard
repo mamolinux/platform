@@ -32,6 +32,7 @@ Task-Test-new-install: install skip
  * bash-completion
  * unzip
  * zip
+ * vim            # Unlike ubuntu, we want full vim experience
 
 == Filesystems ==
 

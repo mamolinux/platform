@@ -36,12 +36,11 @@ Programs and packages necessary for both the proper functionality of the system 
  * python3           # explicitly seeded, despite lsb-release also pulling it it
  * (rsyslog)
  * sudo              # LaMontJones
- * sysvinit-utils    # until "pidof" moves into procps, Debian #810018
  * tzdata
  * ubuntu-advantage-tools # needs to be on the system by default for ESM
  * ubuntu-keyring     # for authenticated package downloads
  * udev
- * vim               # We want full vim experience
+ * vim-tiny
  * whiptail          # for debconf's Dialog frontend
 
 == Networking ==
