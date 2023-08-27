@@ -102,13 +102,11 @@ Fonts:
  * (fonts-tibetan-machine)
  * (fonts-sil-abyssinica)
  * (fonts-lklug-sinhala)
- * (fonts-indic)
 
 = Common Packaging Framework Stuff =
 
  * (packagekit)
  * snapd						# We need to provide firefox through snap
- * (flatpak)
 
 = Firmware updating support =
 
