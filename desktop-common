@@ -19,7 +19,7 @@ https://wiki.ubuntu.com/SeedManagement/AddingPackagesToDesktopCommon
 
 Power management:
 
- * (acpi-support)
+ * (acpi-support) [amd64]
 
 Bluetooth:
 TODO not for Xubuntu
