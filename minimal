@@ -40,7 +40,6 @@ Programs and packages necessary for both the proper functionality of the system 
  * ubuntu-advantage-tools # needs to be on the system by default for ESM
  * ubuntu-keyring     # for authenticated package downloads
  * udev
- * vim-tiny
  * whiptail          # for debconf's Dialog frontend
 
 == Networking ==
