@@ -9,4 +9,5 @@
  * grub-efi-arm [armhf]
  * grub-uboot [armhf]
  * grub-xen [amd64 i386]
+ * mini-iso-tools   # support package for ubuntu-mini-iso
  * sbsigntool

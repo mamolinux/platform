@@ -81,7 +81,6 @@ Utilities:
  * iotop
  * john
  * libmemcached-tools #ClintByrum - server-maverick-uds-web20-workloads
- * nicstat
  * nut # UPS management
  * nut-cgi
  * nut-snmp
@@ -145,6 +144,8 @@ FTP:
 Networking:
 
  * isc-dhcp-server
+ # keep both dhcp servers until we can demote isc-dhcp in 23.10 (LP: #2002861)
+ * kea
  * radvd
 
  * openvswitch-switch

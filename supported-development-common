@@ -14,7 +14,7 @@
  * automake
  * autotools-dev
  * libtool
- * pkg-config
+ * pkgconf
  * exuberant-ctags   # ColinWatson
  * linux32		# without it, biarch buildds can go wonky
  * autopkgtest
@@ -52,6 +52,7 @@
  * dh-exec
  * dh-di
  * dh-golang
+ * dh-cargo
 
 == Seed Management ==
 
