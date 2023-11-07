@@ -88,7 +88,10 @@ Packages used for X preconfiguration are just Recommends; removing them after in
 
 Fonts:
 
- * fonts-dejavu-core
+ * fontconfig
+ * fonts-dejavu-core             # DejaVu Sans Mono is the default monospace font in /etc/fonts/conf.d/60-latin.conf.
+                                 # The reason for the hard dependency is to make sure that DejaVu Sans is available in
+                                 # connection with distupgrades. LP: #2034986
  * fonts-freefont-ttf
  * fonts-liberation
  * fonts-noto-cjk
