@@ -50,7 +50,6 @@ These provide various networking services, all should be configured in a client-
  * bind9-dnsutils       # LaMontJones
  * ftp
  * (iptables)       # FabioMassimoDiNitto
- * memtest86+ [amd64]
  * nftables         # nft is the new iptables LP: #1887187
  * (telnet)
  * openssh-client # ColinWatson

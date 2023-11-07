@@ -79,6 +79,8 @@ Printing and printer configuration is a real weak spot in Debian, and in Linux i
 
 Packages used for X preconfiguration are just Recommends; removing them after initial installation should be relatively safe.
 
+ * (laptop-detect)
+
  * xorg                          # this includes xserver-xorg->xserver-xorg-{input|video}-* (no need to add specific drivers manually)
  * !linux-image-*                # xorg transitively depends on this, but this would pull in grub-pc; we handle that separately
  * xkb-data                      # XKB data now lives here
@@ -90,20 +92,15 @@ Fonts:
  * fonts-freefont-ttf
  * fonts-liberation
  * fonts-noto-cjk
- * fonts-ubuntu
- * (fonts-kacst-one)
- * (fonts-khmeros-core)
- * (fonts-thai-tlwg)
- * (fonts-lao)
- * (fonts-sil-padauk)
- * (fonts-tibetan-machine)
- * (fonts-sil-abyssinica)
- * (fonts-lklug-sinhala)
+
+= Debugging and Diagnostics =
+
+ * memtest86+
 
 = Common Packaging Framework Stuff =
 
  * (packagekit)
- * snapd						# We need to provide firefox through snap
+ * snapd
 
 = Firmware updating support =
 
