@@ -95,6 +95,9 @@ Fonts:
  * fonts-freefont-ttf
  * fonts-liberation
  * fonts-noto-cjk
+ * (fonts-noto-color-emoji)
+ * (fonts-noto-core)             # Noto Sans and Noto Serif are default in /etc/fonts/conf.d/60-latin.conf.
+ * fonts-ubuntu                # desktop default via an override in the ubuntu-settings package
 
 = Debugging and Diagnostics =
 
