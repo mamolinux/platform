@@ -63,7 +63,7 @@ Printing and printer configuration is a real weak spot in Debian, and in Linux i
  * (cups-filters)
  * openprinting-ppds            # Most common drivers we want in desktop; less common are in o-p-extra
  * printer-driver-pnm2ppa       # several ppds require this
- * ghostscript-x
+ * ghostscript
  * (hplip)     			# support for HP all-in-one printers
  * (printer-driver-min12xxw)	# support for KonicaMinolta PagePro 1200W, 1300W printers
  * (printer-driver-foo2zjs)	# support for printing to ZjStream-based printers

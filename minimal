@@ -37,7 +37,7 @@ Programs and packages necessary for both the proper functionality of the system 
  * (rsyslog)
  * sudo              # LaMontJones
  * tzdata
- * ubuntu-advantage-tools # needs to be on the system by default for ESM
+ * ubuntu-pro-client # needs to be on the system by default for the offerings of Ubuntu Pro like ESM
  * ubuntu-keyring     # for authenticated package downloads
  * udev
  * whiptail          # for debconf's Dialog frontend

@@ -38,7 +38,6 @@
  * /^linux-source-[0-9]+/
  * kexec-tools
  * thermald
- * kernel-wedge
 
 == Proprietary drivers ==
 
