@@ -41,7 +41,7 @@ These tools are very commonly used by people who drop into a console shell to do
 
 Basic network services and Windows integration.
 
- * wireless-tools
+ * iw                  # Replace deprecated wireless-tools (LP: #2068612)
  * rfkill              # No longer using the copy from wireless-tools (LP: #715309)
  * wpasupplicant  # ScottJamesRemnant
  * (libnss-mdns)       # IPv4 link-local DNS support
@@ -99,7 +99,7 @@ Fonts:
 
 = Debugging and Diagnostics =
 
- * memtest86+ [amd64]
+ * memtest86+
 
 = Common Packaging Framework Stuff =
 
