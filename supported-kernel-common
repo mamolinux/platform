@@ -38,6 +38,9 @@
  * /^linux-source-[0-9]+/
  * kexec-tools
  * thermald
+ * !linux-realtime
+ * !linux-meta-realtime
+ * !linux-signed-realtime
 
 == Proprietary drivers ==
 

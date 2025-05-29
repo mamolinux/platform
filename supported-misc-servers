@@ -118,6 +118,7 @@ High Availability:
  * pacemaker
  * multipath-tools-boot
  * nbd-server
+ * nbd-client
  * drbd-utils
 
 Configuration Management:

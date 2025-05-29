@@ -58,7 +58,6 @@ These provide various networking services, all should be configured in a client-
 Authentication:
 
  * gnupg
- * sssd
 
 = Debugging and Diagnostics =
 
