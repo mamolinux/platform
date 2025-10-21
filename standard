@@ -28,10 +28,10 @@ Task-Test-new-install: install skip
  * usbutils
  * time
  * xz-utils          # previously pulled in by mime-support
- * bash-completion
+ * (bash-completion)
  * unzip
  * zip
- * vim            # Unlike ubuntu, we want full vim experience
+ * (vim)            # Unlike ubuntu, we want full vim experience
 
 == Filesystems ==
 
@@ -39,8 +39,8 @@ These are commonly used filesystem support packages, here because someone settin
 
  * dosfstools
  * hfsutils [powerpc]
- * ntfs-3g
- * uuid-runtime # we use UUIDs by default, so make it easy to generate them
+ * (ntfs-3g)
+ * (uuid-runtime) # we use UUIDs by default, so make it easy to generate them
 
 == Networking ==
 
@@ -51,7 +51,7 @@ These provide various networking services, all should be configured in a client-
  * (iptables)       # FabioMassimoDiNitto
  * nftables         # nft is the new iptables LP: #1887187
  * (telnet)
- * openssh-client # ColinWatson
+ * (openssh-client) # ColinWatson
  * rsync          # would be just client but they are the same binary apparently
  * wget           # FabioMassimoDiNitto
 
@@ -77,19 +77,19 @@ These are used for debugging problems or examining the system.
 
 = Helpful Tools =
  
- * friendly-recovery    # give a nice menu in recovery mode
- * command-not-found
- * update-manager-core  # needed for server based release upgrades
- * apparmor # load AppArmor policies
- * plymouth # splash screen, and boot-time questions
- * plymouth-theme-mamolinux-text
+ * (friendly-recovery)    # give a nice menu in recovery mode
+ * (command-not-found)
+ * (update-manager-core)  # needed for server based release upgrades
+ * (apparmor) # load AppArmor policies
+ * (plymouth) # splash screen, and boot-time questions
+ * (plymouth-theme-mamolinux-text)
 
 == Network ==
 
  * (iputils-tracepath)  # more secure sort of traceroute, will put compatibility symblink in for traceroute users
  * (mtr-tiny)           # LaMontJones
  * (tcpdump)
- * ufw                # Jamie Strandboge
+ * (ufw)                # Jamie Strandboge
 
 = Other =
 

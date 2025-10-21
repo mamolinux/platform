@@ -15,7 +15,6 @@ https://wiki.ubuntu.com/SeedManagement/AddingPackagesToDesktopCommon
  * (pcmciautils)        # PCMCIA support for >= 2.6.13-rc1 kernels
  * inputattach          # needed for serial mice
  * ubuntu-drivers-common # Make it harder to remove detection support, LP#704597
- * libu2f-udev          # needed to get U2F and yubikeys to work properly
 
 Bluetooth:
 TODO not for Xubuntu
@@ -56,9 +55,9 @@ These packages help with system integration
 
 Printing and printer configuration is a real weak spot in Debian, and in Linux in general. We will need to stay at the front of the curve here.
 
- * cups                     # our preferred printer management infrastructure
+ * (cups)                     # our preferred printer management infrastructure
  * (cups-bsd)                 # gives us lpc, lpq, lpr, lprm
- * cups-client              # gives us cancel, cupstestppd, lp, lpoptions, lppasswd, lpstat, cupsaddsmb, accept, lpadmin, lpinfo, lpmove
+ * (cups-client)              # gives us cancel, cupstestppd, lp, lpoptions, lppasswd, lpstat, cupsaddsmb, accept, lpadmin, lpinfo, lpmove
  * foomatic-db-compressed-ppds  # the foomatic printer driver database
  * (cups-filters)
  * openprinting-ppds            # Most common drivers we want in desktop; less common are in o-p-extra
@@ -90,26 +89,26 @@ Fonts:
  * fonts-dejavu-core             # DejaVu Sans Mono is the default monospace font in /etc/fonts/conf.d/60-latin.conf.
                                  # The reason for the hard dependency is to make sure that DejaVu Sans is available in
                                  # connection with distupgrades. LP: #2034986
- * fonts-freefont-ttf
- * fonts-liberation
- * fonts-indic                  # Meta package to install all Indian language fonts
+ * (fonts-liberation)
+ * (fonts-indic)                  # Meta package to install all Indian language fonts
  * (fonts-noto-color-emoji)
  * (fonts-noto-core)             # Noto Sans and Noto Serif are default in /etc/fonts/conf.d/60-latin.conf.
- * fonts-ubuntu                # desktop default via an override in the ubuntu-settings package
+ * (fonts-ubuntu)                # desktop default via an override in the ubuntu-settings package
 
 = Debugging and Diagnostics =
 
- * memtest86+ [amd64]       # do not remove architecture because this package is not available for other archs
+ * (memtest86+) [amd64]       # do not remove architecture because this package is not available for other archs
 
 = Common Packaging Framework Stuff =
 
  * (packagekit)
- * snapd
+ * (snapd)
+ * (flatpak)
 
 = Firmware updating support =
 
- * fwupd
- * fwupd-signed
+ * (fwupd)
+ * (fwupd-signed)
 
 = Other =
 

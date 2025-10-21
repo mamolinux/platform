@@ -131,7 +131,9 @@ Other:
  * rabbitmq-server
  * unzip
  * containerd # for OCF support (LP: #1819761)
+ * containerd-stable # Stable version of containerd (LP: #2121802)
  * runc # for OCF support (LP: #1817336)
+ * runc-stable # Stable version of runc (LP: #2121802)
  * clamav
  * clamav-daemon
 
